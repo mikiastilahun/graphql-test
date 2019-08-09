@@ -5,7 +5,7 @@
   "description": "a project management app with seamless integration with slack workspaces ",
   "license": "MIT",
   "scripts": {
-    "start": "tsc && node dist/src/index.js",
+    "start": "tsc && ./copy.sh && node dist/src/index.js",
     "dev": "ts-node-dev -r dotenv/config --respawn --transpileOnly src/index.ts"
   },
   "dependencies": {
@@ -21,7 +21,6 @@
     "@types/express": "^4.17.0",
     "@types/node": "^12.7.0",
     "dotenv": "^8.0.0",
-    "graphql-tools": "^4.0.5",
     "ts-node-dev": "^1.0.0-pre.40"
   }
 }
